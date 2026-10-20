@@ -4,8 +4,8 @@
 
 | Dato | Valor |
 |---|---|
-| Grupo | GXX |
-| Emprendimiento | |
+| Grupo | G5 |
+| Emprendimiento | CineFilo|
 | Integrantes | 1. Isaac Maisincho |
 | NRC | 36878|
 | Fecha |19/10/2026 |

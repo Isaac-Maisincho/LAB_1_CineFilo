@@ -13,7 +13,12 @@
 
 Pega aquí la imagen del diagrama (Excalidraw o Mermaid): navegador → servidor → base de datos, con sus flechas.
 
-![Mapa del sistema](mapa.png)
+graph LR
+    Cliente[💻 Navegador Web / Postman] -- "Peticiones HTTP (GET, POST)" --> API((⚙️ Servidor Node/Express))
+    API -- "Respuestas (Código 200, 201)" --> Cliente
+
+    API -- "Lee/Escribe (fs.promises)" --> BD[(📁 data/peliculas.json)]
+    BD -- "Retorna los datos" --> API
 
 ## Entidades (3) y atributos principales
 
