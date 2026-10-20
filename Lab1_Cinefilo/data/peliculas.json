@@ -16,7 +16,31 @@
     "clasificacion": "Todo público"
   },
   {
-    "id": 3,
+    "id": 4,
+    "titulo": "Interestelar",
+    "genero": "Ciencia ficción",
+    "duracionMinutos": 169,
+    "precioEntrada": 4,
+    "clasificacion": "+12"
+  },
+  {
+    "id": 5,
+    "titulo": "Interestelar",
+    "genero": "Ciencia ficción",
+    "duracionMinutos": 169,
+    "precioEntrada": 4,
+    "clasificacion": "+12"
+  },
+  {
+    "id": 6,
+    "titulo": "Interestelar",
+    "genero": "Ciencia ficción",
+    "duracionMinutos": 169,
+    "precioEntrada": 4,
+    "clasificacion": "+12"
+  },
+  {
+    "id": 7,
     "titulo": "Interestelar",
     "genero": "Ciencia ficción",
     "duracionMinutos": 169,

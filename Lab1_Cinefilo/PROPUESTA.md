@@ -1,4 +1,4 @@
-# Propuesta del emprendimiento · Grupo GXX
+# Propuesta del emprendimiento · Grupo G5
 
 > Actividad 1 de la sesión 1. Complétala antes del Paso 1 del laboratorio.
 
@@ -14,10 +14,10 @@
 Pega aquí la imagen del diagrama (Excalidraw o Mermaid): navegador → servidor → base de datos, con sus flechas.
 
 graph LR
-    Cliente[💻 Navegador Web / Postman] -- "Peticiones HTTP (GET, POST)" --> API((⚙️ Servidor Node/Express))
+    Cliente[ Navegador Web / Postman] -- "Peticiones HTTP (GET, POST)" --> API((⚙️ Servidor Node/Express))
     API -- "Respuestas (Código 200, 201)" --> Cliente
 
-    API -- "Lee/Escribe (fs.promises)" --> BD[(📁 data/peliculas.json)]
+    API -- "Lee/Escribe (fs.promises)" --> BD[( data/peliculas.json)]
     BD -- "Retorna los datos" --> API
 
 ## Entidades (3) y atributos principales
