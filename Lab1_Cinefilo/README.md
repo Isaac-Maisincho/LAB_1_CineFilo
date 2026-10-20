@@ -6,10 +6,10 @@
 |---|---|
 | Grupo | GXX |
 | Emprendimiento | |
-| Integrantes | 1. <br> 2. <br> 3. <br> 4. |
-| NRC | |
-| Fecha | |
-| Repositorio | (enlace) |
+| Integrantes | 1. Isaac Maisincho |
+| NRC | 36878|
+| Fecha |19/10/2026 |
+| Repositorio | https://github.com/Isaac-Maisincho/LAB_1_CineFilo.git |
 
 ## Cómo ejecutar
 
@@ -44,25 +44,31 @@ Flujo de una petición: **ruta → controlador → servicio → modelo** y de vu
 
 | Verbo | Ruta | Acción | Éxito | Errores |
 |---|---|---|---|---|
-| GET | /api/... | Listar | 200 | — |
-| GET | /api/.../:id | Ver uno | 200 | 400, 404 |
-| POST | /api/... | Crear | 201 | 400 |
-| PUT | /api/.../:id | Actualizar | 200 | 400, 404 |
-| DELETE | /api/.../:id | Eliminar | 204 | 404 |
+| **GET** | `/api/peliculas` | Listar | 200 | — |
+| **GET** | `/api/peliculas/:id` | Ver uno | 200 | 400, 404 |
+| **POST** | `/api/peliculas` | Crear | 201 | 400 |
+| **PUT** | `/api/peliculas/:id` | Actualizar | 200 | 400, 404 |
+| **DELETE**| `/api/peliculas/:id` | Eliminar | 204 | 404 |
 
 ## Validaciones del servicio
 
-1.
-2.
+En la capa de servicio (`src/services/pelicula.service.js`), se implementó el método `validate()` para asegurar la integridad de los datos antes de crear (`POST`) o actualizar (`PUT`) un registro. Si alguna de estas reglas no se cumple, el servidor interrumpe la operación y responde con un código HTTP `400 Bad Request` junto con un mensaje descriptivo:
+
+1. Título obligatorio: Se verifica que el campo `titulo` exista y no esté vacío (evitando cadenas de solo espacios). 
+   - *Mensaje de error:* "El título de la película es obligatorio".
+2. Duración lógica: Se valida que, si se envía el campo `duracionMinutos`, este sea un valor estrictamente mayor a cero. 
+   - *Mensaje de error:* "La duración de la película debe ser mayor a 0".
+3. Precio válido: Se comprueba que el `precioEntrada` no contenga valores negativos (debe ser mayor o igual a 0). 
+   - *Mensaje de error:* "El precio de la entrada debe ser mayor o igual a 0".
 
 ## Aporte de cada integrante
 
 | Integrante | Qué hizo (archivos / pasos) |
 |---|---|
-| | |
+| Isaac Maisincho|Controllers / middlewares/ models / routes/services/utils |
 
 ## Declaración de uso de IA
 
-- Herramienta(s) usada(s): ___ (o «No se usó IA»)
-- Para qué la usamos (consultar, depurar, explicar un error…):
-- Qué verificamos o corregimos nosotros:
+- Herramienta(s) usada(s): Google Gemini
+- Para qué la usamos (consultar, depurar, explicar un error…): Consulta y solucion de errores en los endpoints
+- Qué verificamos o corregimos nosotros: verificamos las rutas de cada endpoint
