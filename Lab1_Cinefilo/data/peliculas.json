@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo": "Cars",
+    "genero": "Drama",
+    "duracionMinutos": 175,
+    "precioEntrada": 5.5,
+    "clasificacion": "+15"
+  },
+  {
+    "id": 2,
+    "titulo": "Coco",
+    "genero": "Animación",
+    "duracionMinutos": 105,
+    "precioEntrada": 3.5,
+    "clasificacion": "Todo público"
+  },
+  {
+    "id": 3,
+    "titulo": "Interestelar",
+    "genero": "Ciencia ficción",
+    "duracionMinutos": 169,
+    "precioEntrada": 4,
+    "clasificacion": "+12"
+  }
+]
